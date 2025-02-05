@@ -11,6 +11,7 @@
   height: 58px;
   align-content: center;
   display: flex;
+  position: relative;
 }
 
 .logo img {
@@ -24,11 +25,14 @@
 
 .headName {
   color: #c3d0e5;
-
   font-size: 20px;
   letter-spacing: 0.2px;
   font-weight: 460;
   margin-left: 10px;
+}
+
+.head a {
+  text-decoration: none;
 }
 
 .head {
@@ -166,7 +170,7 @@
   cursor: pointer;
 }
 
-.mainButton:hover ~ .smallerText p {
+.buttonClass:hover .smallerText p {
   color: #9ca2b5;
 }
 
@@ -184,6 +188,7 @@
 .smallText {
   text-align: center;
   margin-top: 12px;
+  cursor: pointer;
 }
 
 .smallerText p {
@@ -195,6 +200,10 @@
   transition-duration: 0.25s;
 }
 
+.smallerText span {
+  color: #0d1117;
+}
+
 .smallerText {
   text-align: center;
   margin-top: 12px;
@@ -202,4 +211,56 @@
 
 .smallerText p:hover {
   color: #9ca2b5;
+}
+
+.smallerText span:hover {
+  text-decoration: 1px underline #9ca2b5;
+}
+
+.smallerText a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.smallerText span {
+  color: #0d1117;
+}
+
+.smallerText a span {
+  transition-property: color;
+  transition-duration: 0.25s;
+}
+
+.buttonClass:hover .smallerText a span {
+  text-decoration: underline;
+  color: #9ca2b5;
+}
+
+.videoAndImg {
+  position: relative;
+  width: 100%;
+  height: 900px;
+  overflow: hidden;
+  padding-left: 7.82rem;
+  margin-top: 30px;
+}
+
+.bgimage {
+  width: 1240px;
+  height: 832.3px;
+  object-fit: cover;
+  position: absolute;
+  z-index: 1;
+  border-radius: 28px;
+}
+
+.bgvideo {
+  width: 1116px;
+  height: 707.3px;
+  object-fit: cover;
+  position: absolute;
+  z-index: 2;
+  margin-left: 4rem;
+  margin-top: 3.95rem;
+  border-radius: 14px;
 }
