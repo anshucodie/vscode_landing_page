@@ -12,7 +12,7 @@
   align-content: center;
   display: flex;
   position: sticky;
-  top: 20px;
+  top: 0px;
   z-index: 3;
 }
 
@@ -380,4 +380,8 @@
 .endText span {
   color: #9ca2b5;
   font-size: 12px;
+}
+
+.endText a {
+  text-decoration: none;
 }
