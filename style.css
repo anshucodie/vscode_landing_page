@@ -11,7 +11,9 @@
   height: 58px;
   align-content: center;
   display: flex;
-  position: relative;
+  position: sticky;
+  top: 20px;
+  z-index: 3;
 }
 
 .logo img {
@@ -20,7 +22,6 @@
   margin-left: 7.3rem;
   margin-top: 5px;
   margin-right: 2px;
-  /* margin-top: 18px; */
 }
 
 .headName {
@@ -263,4 +264,120 @@
   margin-left: 4rem;
   margin-top: 3.95rem;
   border-radius: 14px;
+}
+
+.language {
+  width: 100%;
+  /* max-width: ; */
+  height: 319px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.langText {
+  width: 440px;
+  height: 223px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.langText p {
+  color: #c2d0e5;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 160%;
+  margin-bottom: 10px;
+}
+
+.langText p2 {
+  color: #9ba3b4;
+  font-size: 16px;
+  line-height: 160%;
+}
+
+.iconText p {
+  color: #9ba3b4;
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace !important;
+  margin: 0;
+}
+
+.iconText {
+  width: 280px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-weight: 100;
+}
+
+.langicons img {
+  width: 40px;
+  height: 40px;
+}
+
+.firstLangIcons {
+  display: flex;
+}
+.secondLangIcons {
+  display: flex;
+}
+.thirdLangIcons {
+  display: flex;
+}
+.forthLangIcons {
+  display: flex;
+}
+
+.endIcons {
+  display: flex;
+  margin-top: 40px;
+  height: 40px;
+  justify-content: space-between;
+}
+
+.rightIcon {
+  display: flex;
+  margin-left: 7.83rem;
+  gap: 25px;
+}
+
+.leftIcon {
+  margin-right: 7.83rem;
+}
+
+.xIcon {
+  width: 18.3px;
+  padding-top: 4px;
+}
+
+.githubIcon {
+  width: 24px;
+  object-fit: contain;
+}
+
+.youtubeIcon {
+  width: 24px;
+  object-fit: contain;
+}
+
+.microsoftIcon {
+  width: 24px;
+  object-fit: contain;
+}
+
+.endText {
+  margin-left: 7.83rem;
+  margin-bottom: 100px;
+}
+
+.endText p {
+  display: flex;
+  gap: 25px;
+}
+
+.endText span {
+  color: #9ca2b5;
+  font-size: 12px;
 }
